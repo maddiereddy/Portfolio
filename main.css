@@ -108,7 +108,7 @@ footer .social {
 
 }
 .icons ul li a:hover {
-  background: #da82ac;
+  background:tomato;
   color: #fff;
 }
 
@@ -122,11 +122,11 @@ footer .social {
 
  /** NAVIGATION SECTION **/
 nav {
-  background-color: #fff;
+  background-color: lightslategray;
   position: fixed;
   width: 100%;
   text-transform: uppercase;
-  border-bottom: 0.06em solid #aaa;
+  border-bottom: 0.06em solid tomato;
   z-index: 9999;
 }
 
@@ -136,14 +136,15 @@ nav > .content {
 
 nav .logo {
   float: left;
-  color: #171818;
+  color:black;
   font-size: 1.25rem;
   margin-top: 1.49rem;
+  margin-left: 2rem;
   letter-spacing: -.02rem;
 }
 
 nav .logo a {
-  color: #171818;
+  color:black;
   text-decoration: none;
 }
 
@@ -156,27 +157,27 @@ nav .nav-menu {
 
 nav .nav-menu li {
   display: inline-block;
-  padding: 0 0 0 2rem;
+  padding: 0 2rem;
 }
 
 nav .nav-menu li a {
   margin-left: 1.563rem;
-  color: #a2a2a2;
+  color: black;
   text-decoration: none;
   transition: all .4s ease 0s;
 }
 
 nav .nav-menu li.active {
-  color: #3a5556;
+  color: white;
   font-weight: 500;
 }
 
 nav .nav-menu li a:hover {
-  color: #da82ac;
+  color:tomato;
 }
 nav a:hover {
   cursor: pointer;
-  color: #da82ac;
+  color: tomato;
 }
 
 
@@ -184,17 +185,11 @@ nav a:hover {
 
 header {
   width: 100%;
-  background-image: url('../img/starry-night.jpeg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 39.938rem;
-  overflow: auto; 
 }
 
 header .content {
-  height: 39.938rem;
-  color: white;
+  height: 20rem;
+  color: lightgray;
   text-align: center;
   font-weight: 300;
 }
@@ -217,21 +212,6 @@ section .content h2 {
   margin: 5rem 0 2.5rem 0;
 }
 
-section .profile-img {
-  max-width: 45rem;
-  margin: auto;
-  text-align: center;
-  padding: 0 0 1.5rem 0;
-}
-section .profile-img img {
-  width: 12vw;
-  height: 12vw;
-  margin: auto;
-  border-radius: 50%;
-  padding: .2em;
-  border: .1em solid #a2a2a2;
-
-}
 section .content .about-me {
   max-width: 45rem;
   margin: auto;
@@ -244,14 +224,14 @@ section .content p {
 }
 
 section .content a {
-  color: #da82ac;
+  color: tomato;
   text-decoration: none;  
   transition: all .4s ease 0s;
   font-weight: 900;
 }
 
 section .content a:hover {
-  color: #a72b79;
+  color:tomato;
 }
 
 
