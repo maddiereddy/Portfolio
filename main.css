@@ -40,3 +40,360 @@ section {
 section:nth-child(even) {
   background-color: #ddd;
 }
+
+/**************************************/
+/** FOOTER SECTION **/
+
+footer h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 5rem 0 2.5rem 0;
+}
+
+footer .social {
+  width: 100%;
+  height: 15rem;
+  margin: auto;
+  padding: 3rem 0;
+  background-color: #1b1b1b;
+}
+
+.icons {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.icons ul {
+  clear: left;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+
+.icons ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 1em;
+  padding: 0;
+  position: relative;
+  right: 50%;
+}
+
+.icons ul li a {
+  display: block;
+  margin: 1em -0.3rem;
+  padding: 0.68em;
+  color: #bcbcbc;
+  text-decoration: none;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  border: 2px solid #616161;
+  border-radius: 50%;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.icons a i {
+  color: #fbfbfb;
+  font-size: 1.5rem;
+  line-height: 1;
+
+}
+.icons ul li a:hover {
+  background: #da82ac;
+  color: #fff;
+}
+
+#copyright {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: .9rem;
+  color: #bcbcbc;
+  padding: 6rem 0 0;
+ }
+
+ /** NAVIGATION SECTION **/
+nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 0.06em solid #aaa;
+  z-index: 9999;
+}
+
+nav > .content {
+  height: 4.375rem;
+}
+
+nav .logo {
+  float: left;
+  color: #171818;
+  font-size: 1.25rem;
+  margin-top: 1.49rem;
+  letter-spacing: -.02rem;
+}
+
+nav .logo a {
+  color: #171818;
+  text-decoration: none;
+}
+
+nav .nav-menu {
+  float: right;
+  color: #aaa;
+  font-size: 1.05rem;
+  margin-top: 1.7rem;
+}
+
+nav .nav-menu li {
+  display: inline-block;
+  padding: 0 0 0 2rem;
+}
+
+nav .nav-menu li a {
+  margin-left: 1.563rem;
+  color: #a2a2a2;
+  text-decoration: none;
+  transition: all .4s ease 0s;
+}
+
+nav .nav-menu li.active {
+  color: #3a5556;
+  font-weight: 500;
+}
+
+nav .nav-menu li a:hover {
+  color: #da82ac;
+}
+nav a:hover {
+  cursor: pointer;
+  color: #da82ac;
+}
+
+
+/** HEADER SECTION **/
+
+header {
+  width: 100%;
+  background-image: url('../img/starry-night.jpeg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 39.938rem;
+  overflow: auto; 
+}
+
+header .content {
+  height: 39.938rem;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+}
+
+header .content h6 {
+  padding-top: 35rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+
+}
+
+header p {
+margin-top: 0.5rem;
+}
+
+/** ABOUT ME SECTION **/
+section .content h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 5rem 0 2.5rem 0;
+}
+
+section .profile-img {
+  max-width: 45rem;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 1.5rem 0;
+}
+section .profile-img img {
+  width: 12vw;
+  height: 12vw;
+  margin: auto;
+  border-radius: 50%;
+  padding: .2em;
+  border: .1em solid #a2a2a2;
+
+}
+section .content .about-me {
+  max-width: 45rem;
+  margin: auto;
+  text-align: left;
+  font-size: 1.1rem;
+}
+section .content p {
+  font-family: 'muli', sans-serif;
+  line-height: 1.75em;
+}
+
+section .content a {
+  color: #da82ac;
+  text-decoration: none;  
+  transition: all .4s ease 0s;
+  font-weight: 900;
+}
+
+section .content a:hover {
+  color: #a72b79;
+}
+
+
+/** RECENT WORK SECTION **/
+.projects{
+  text-align: center;
+}
+
+section .content h2 {
+  margin: 5rem 0 2.5rem 0;
+  font-size: 1.9rem;
+}
+
+.project-box {
+    background-color: #bbbbbb;
+    width: 17vw;
+    height: 17vw;
+    display:inline-block;
+    margin:1em;
+    position: relative;
+}
+.box {
+    width: 17vw;
+    height: 17vw;
+    color:black;
+    font-weight:bold;
+    text-align:center;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-decoration: none;
+    border: 0.15rem solid #ccc;
+}
+
+.excerpt {
+    width: 17vw;
+    height: 17vw;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+    font-size: 1em;
+}
+
+.excerpt h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  padding: 20% 0 5% 0;
+}
+
+.excerpt a {
+  color: #fbfbfb;
+  font-size: 2rem;
+}
+
+.box:hover .excerpt {
+  opacity: 90;
+  background-color: rgba(0,0,0,.9);
+  color: white;
+}
+
+
+ /** RESPONSIVE DESIGN **/
+@media screen and (max-width: 790px) {
+  nav > .content {
+  height: 3.375rem;
+}
+  nav .logo {
+    display: none;
+  }
+  nav .logo, nav .nav-menu {
+    font-size: 0.9rem
+  }
+  nav .nav-menu li a {
+  margin-left: -1rem;
+  }
+
+  header, header > .content {
+  height: 30rem;
+  }  
+
+  header .content h6 {
+  padding-top: 27rem;
+  font-size: 0.9rem;
+  }
+
+  header .content p {
+    font-size: 0.7rem;
+  }
+  
+  section .profile-img img {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  section .content h2, footer h2 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  section .content p {
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+  }
+
+  section .content .about-me {
+    max-width: 30rem;
+  }
+  
+  .project-box {
+    margin: 0.5rem;
+  }
+
+  .excerpt {
+    font-size: 0.7rem;
+  }
+
+  .excerpt a {
+    font-size: 1rem;
+  }
+
+  footer .social {
+    height: 10rem;
+    padding: 2rem 0;
+  }
+  .icons a i {
+    font-size: 0.9rem;
+  }
+  
+  .icons ul li a {
+    padding: 0.38em;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #copyright {
+    font-size: 0.8rem;
+    padding: 5rem 0 0;
+  }
+
+}
