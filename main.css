@@ -26,7 +26,7 @@ header {
 
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 1rem 0;
   background-color: gray;
   color: black;
 }
@@ -36,7 +36,6 @@ section:nth-child(odd) {
 }
 
 /** FOOTER SECTION **/
-
 footer h2 {
   text-align: center;
   font-size: 2rem;
@@ -48,8 +47,8 @@ footer .social {
   width: 100%;
   height: 15rem;
   margin: 0 auto;
-  padding: 3rem 0;
-  background-color: #1b1b1b;
+  padding: 1rem 0;
+  background: linear-gradient(black, #333333);
 }
 
 .icons {
@@ -106,7 +105,7 @@ footer .social {
  /** NAVIGATION SECTION **/
 nav {
   height: 5rem;
-  background-color: black;
+  background: linear-gradient(black, #333333);
   position: fixed;
   width: 100%;
   text-transform: uppercase;
@@ -151,6 +150,7 @@ nav .nav-menu li.active {
 nav .nav-menu li a:hover {
   color:tomato;
 }
+
 nav a:hover {
   cursor: pointer;
   color: tomato;
@@ -158,7 +158,6 @@ nav a:hover {
 
 
 /** HEADER SECTION **/
-
 header {
   width: 100%;
   height: 35rem;
@@ -175,12 +174,19 @@ header div {
 }
 
 /** RECENT WORK SECTION **/
-
-#work .content a {
+#work .box a {
   color: white;
   text-decoration: none;  
   transition: all .4s ease 0s;
   font-weight: 500;
+}
+
+#work .description a {
+  color: black;
+  text-decoration: underline;
+  transition: all .4s ease 0s;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 
 #work .content a:hover {
@@ -200,15 +206,15 @@ header div {
 
 .project-box {
   background-color: #bbbbbb;
-  width: 100vw;
+  width: 95vw;
   height: 35vw;
-  margin:1em;
+  margin: 1.5rem;
   position: relative;
 }
 
 .box {
   width: 50vw;
-  height: 35vw;
+  height: 32vw;
   color:black;
   font-weight:bold;
   text-align:center;
@@ -220,33 +226,56 @@ header div {
 
 #opagrappa {
   float:right;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 #cribtrakr, #plughubs {
   float:left;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .description {
-  width: 50vw;
+  width: 35vw;
   height: 35vw;
-  text-align: center;
+}
+
+.description h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 1rem;
 }
 
 .description h3 {
   font-style: italic;
+  text-align: center;
 }
 
 #og {
   float:left;
+  margin-left: 3rem;
 }
 
 #ct, #ph {
   float:right;
+  margin-right: 3rem;
+}
+
+.devicons {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.links {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .excerpt {
   width: 50vw;
-  height: 35vw;
+  height: 32vw;
   position: absolute;
   opacity: 0;
   transition: .5s;
@@ -265,7 +294,7 @@ header div {
 }
 
 .box:hover .excerpt {
-  opacity: 90;
+  opacity: 0.8;
   background-color: rgba(0,0,0,.9);
   color: white;
 }
