@@ -382,5 +382,13 @@ header div {
     width: 2.5rem;
     height: 2.5rem;
   }
+  
+  #cribtrakr, #plughubs, #opagrappa {
+    float:left;
+  }
+  
+  #ct, #ph, #og {
+    float:left;
+  }
 
 }
