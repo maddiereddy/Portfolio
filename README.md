@@ -1,2 +1,2 @@
 # Portfolio
-My portfolio
+## Hi! I'm Maddie and this is my portfolio!

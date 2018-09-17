@@ -8,25 +8,33 @@ body {
   color: silver;
   text-align: center;
   line-height: 1.5;
+  width: 100%;
 }
 
 nav {
   position: fixed;
+  height: 5rem;
   padding: 1% 0;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  background: linear-gradient(black, #333333);
+  text-transform: uppercase;
+  border-bottom: 0.3rem solid tomato;
+  z-index: 9999;
+  color:white;
+  font-size: 1rem;
+  letter-spacing: -.02rem;
 }
 
 header {
-  padding: 10% 0;
+  padding: 10% 0 5% 0;
   color: black;
 }
 
 section {
   min-height: 200px;
-  padding: 1rem 0;
+  padding: 1% 0;
   background-color: gray;
   color: black;
 }
@@ -103,20 +111,8 @@ footer .social {
 }
 
  /** NAVIGATION SECTION **/
-nav {
-  height: 5rem;
-  background: linear-gradient(black, #333333);
-  position: fixed;
-  width: 100%;
-  text-transform: uppercase;
-  border-bottom: 0.3rem solid tomato;
-  z-index: 9999;
-  color:white;
-  font-size: 1rem;
-  letter-spacing: -.02rem;
-}
-
 nav .logo {
+  display: block;
   float: left;
   margin-left: 2rem;
 }
@@ -159,62 +155,40 @@ nav a:hover {
 
 /** HEADER SECTION **/
 header {
-  width: 100%;
-  height: 35rem;
   background-color: lightgray;
   text-align: center;
   font-weight: 500;
 }
 
-header div {
-  margin: auto;
+header #about-me {
+  margin: 0 auto;
   width: 50%;
   text-align: center;
   font-size: 1rem;
 }
 
 /** RECENT WORK SECTION **/
-#work .box a {
-  color: white;
-  text-decoration: none;  
-  transition: all .4s ease 0s;
-  font-weight: 500;
-}
-
-#work .description a {
-  color: black;
-  text-decoration: underline;
-  transition: all .4s ease 0s;
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-
-#work .content a:hover {
+.content a:hover {
   color:tomato;
 }
 
-.projects{
+.content h2 {
   text-align: center;
-}
-
-#work .content h2 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 3rem;
+  margin: 2rem auto 3rem;;
   font-size: 2rem;
 }
 
 .project-box {
   background-color: #bbbbbb;
-  width: 95vw;
-  height: 35vw;
-  margin: 1.5rem;
-  position: relative;
+  width: calc(100% - 2rem);
+  height: 28rem;
+  margin: 1rem;
 }
 
 .box {
-  width: 50vw;
-  height: 32vw;
+  width: 50%;
+  height: 100%;
+  min-height: 100%;
   color:black;
   font-weight:bold;
   text-align:center;
@@ -222,27 +196,24 @@ header div {
   background-repeat: no-repeat;
   background-size: contain;
   text-decoration: none;
+  margin: 0;
+  /* border: 3px solid red; */
 }
 
-#opagrappa {
-  float:right;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-#cribtrakr, #plughubs {
-  float:left;
-  margin-top: 1rem;
-  margin-right: 1rem;
+.box:hover {
+  cursor: pointer;
+  opacity:0.6;
 }
 
 .description {
-  width: 35vw;
-  height: 35vw;
+  width: 50%;
+  min-height: 100%;
+  text-align: center;
+  /* border: 3px solid green; */
 }
 
 .description h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: normal;
   text-align: left;
   padding: 0 1rem;
@@ -251,52 +222,52 @@ header div {
 .description h3 {
   font-style: italic;
   text-align: center;
+  font-size: 1.5rem;
+}
+
+.box a {
+  color: white;
+  text-decoration: none;  
+  transition: all .4s ease 0s;
+  font-weight: 500;
+}
+
+.description .links {
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 2rem auto;
+}
+
+.description a {
+  color: black;
+  text-decoration: underline;
+  transition: all .4s ease 0s;
+}
+
+#opagrappa {
+  float: right;
+  overflow: hidden;
+}
+
+#cribtrakr, #plughubs {
+  float: left;
+  overflow: hidden;
 }
 
 #og {
-  float:left;
-  margin-left: 3rem;
+  float: left;
+  text-align: center;
 }
 
 #ct, #ph {
-  float:right;
-  margin-right: 3rem;
-}
-
-.devicons {
+  float: right;
   text-align: center;
-  font-size: 2rem;
 }
 
-.links {
+.description .devicons {
+  margin: 2rem auto;
   font-size: 1.5rem;
-  text-align: center;
-}
-
-.excerpt {
-  width: 50vw;
-  height: 32vw;
-  position: absolute;
-  opacity: 0;
-  transition: .5s;
-  font-size: 1em;
-}
-
-.excerpt h3 {
-  font-weight: 200;
-  color: #fbfbfb;
-  padding: 20% 0 5% 0;
-}
-
-.excerpt a {
-  color: #fbfbfb;
-  font-size: 2rem;
-}
-
-.box:hover .excerpt {
-  opacity: 0.8;
-  background-color: rgba(0,0,0,.9);
-  color: white;
 }
 
 #cribtrakr {
@@ -310,85 +281,87 @@ header div {
 }
 
 
-
  /** RESPONSIVE DESIGN **/
 @media screen and (max-width: 790px) {
-  nav > .content {
-  height: 3.375rem;
-}
+  nav .nav-menu {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+
   nav .logo {
     display: none;
   }
-  nav .logo, nav .nav-menu {
-    font-size: 0.9rem
-  }
-  nav .nav-menu li a {
-  margin-left: -1rem;
-  }
 
-  header, header > .content {
-  height: 30rem;
-  }  
-
-  header .content h6 {
-  padding-top: 27rem;
-  font-size: 0.9rem;
+  header h1 {
+    margin-top: 4rem;
+    font-size: 1.8rem;
   }
 
-  header .content p {
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  header h4 {
+    width: 80%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  header #about-me {
+    width: 90%;
     font-size: 0.7rem;
-  }
-  
-  section .profile-img img {
-    width: 17vw;
-    height: 17vw;
+    margin: 0 auto;
   }
 
-  section .content h2, footer h2 {
-    margin: 2rem 0 1.5rem 0;
+  .project-box {
+    height: 12rem;
+  }
+
+  .content h2 {
+    margin: 1rem 0 1.5rem;
     font-size: 1.5rem;
   }
-  section .content p {
-    font-size: 0.9rem;
-    line-height: 1.35rem;
+
+  .description h3 {
+    font-size: 0.8rem;
+    margin: 1rem auto 0.5rem;
   }
 
-  section .content .about-me {
-    max-width: 30rem;
+  .description h4 {
+    font-size: 0.4rem;
+  }
+
+  .description .devicons {
+    font-size: 0.6rem;
+    margin: 0 auto;
+  }
+
+  .description .links {
+    font-size: 0.6rem;
+    margin: 0.5rem auto;
   }
   
-  .project-box {
-    margin: 0.5rem;
-  }
-
-  .excerpt {
-    font-size: 0.7rem;
-  }
-
-  .excerpt a {
-    font-size: 1rem;
+  footer h2 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
   }
 
   footer .social {
     height: 10rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
+
   .icons a i {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   
   .icons ul li a {
-    padding: 0.38em;
+    padding: 0.2em;
     width: 2.5rem;
     height: 2.5rem;
   }
   
-  #cribtrakr, #plughubs, #opagrappa {
-    float:left;
-  }
-  
-  #ct, #ph, #og {
-    float:left;
-  }
-
 }
