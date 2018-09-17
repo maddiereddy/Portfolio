@@ -200,11 +200,6 @@ header #about-me {
   /* border: 3px solid red; */
 }
 
-.box:hover {
-  cursor: pointer;
-  opacity:0.6;
-}
-
 .description {
   width: 50%;
   min-height: 100%;
@@ -270,6 +265,46 @@ header #about-me {
   font-size: 1.5rem;
 }
 
+.view-project-hover {
+  color: white;
+  opacity: 0;
+  background-color: tomato;
+  font-size: 1em;
+  transition: all .3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  left: 0;
+  padding: 0.5rem;
+  right: 0;
+}
+
+.image img {
+  transition: all 0.3s ease;
+}
+
+.image:hover > .view-project-hover {
+  opacity: 1;
+}
+
+.image img:hover  {
+  filter: grayscale(100%);
+}
+
+.image {
+  display: inline-block;
+  position: relative;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+  
+/* 
+
 #cribtrakr {
   background-image: url('./images/cribtrakr.png');
 }
@@ -278,7 +313,7 @@ header #about-me {
 }
 #plughubs {
   background-image: url('./images/plughubs.png')
-}
+} */
 
 
  /** RESPONSIVE DESIGN **/
@@ -325,23 +360,41 @@ header #about-me {
     font-size: 1.5rem;
   }
 
+  .box {
+    width:60%;
+  }
+
+  .description {
+    width: 40%;
+  }
+
   .description h3 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: 1rem auto 0.5rem;
   }
 
   .description h4 {
-    font-size: 0.4rem;
+    font-size: 0.35rem;
+    margin: 0;
   }
 
   .description .devicons {
-    font-size: 0.6rem;
-    margin: 0 auto;
+    font-size: 0.5rem;
+    margin: 0.3rem auto;
   }
 
   .description .links {
-    font-size: 0.6rem;
-    margin: 0.5rem auto;
+    font-size: 0.5rem;
+    margin: 0.3rem auto;
+  }
+
+  .view-project-hover {
+    font-size: 0.5em;
+    padding: 0.2rem;
+  }
+
+  .image {
+    margin: 1rem 0.5rem;
   }
   
   footer h2 {
