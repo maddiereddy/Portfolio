@@ -186,7 +186,7 @@ header #about-me {
 }
 
 .box {
-  width: 50%;
+  width: 60%;
   height: 100%;
   min-height: 100%;
   color:black;
@@ -201,7 +201,7 @@ header #about-me {
 }
 
 .description {
-  width: 50%;
+  width: 40%;
   min-height: 100%;
   text-align: center;
   /* border: 3px solid green; */
@@ -317,7 +317,9 @@ header #about-me {
 
 
  /** RESPONSIVE DESIGN **/
-@media screen and (max-width: 790px) {
+ 
+  
+@media screen and (max-width: 767px) {
   nav .nav-menu {
     width: 100%;
     display: block;
@@ -352,20 +354,12 @@ header #about-me {
   }
 
   .project-box {
-    height: 12rem;
+    height: 16rem;
   }
 
   .content h2 {
     margin: 1rem 0 1.5rem;
     font-size: 1.5rem;
-  }
-
-  .box {
-    width:60%;
-  }
-
-  .description {
-    width: 40%;
   }
 
   .description h3 {
@@ -417,4 +411,22 @@ header #about-me {
     height: 2.5rem;
   }
   
+}
+
+@media only screen and (max-width: 414px) {
+  .project-box {
+    height: 12rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {  
+  .project-box {
+    height: 36rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {  
+  .project-box {
+    height: 40rem;
+  }
 }
