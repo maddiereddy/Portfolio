@@ -332,6 +332,107 @@ header #about-me {
 
 
  /** RESPONSIVE DESIGN **/
+
+ @media only screen and (max-width: 480px) {
+  nav .nav-menu {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  nav .logo {
+    display: none;
+  }
+
+  header h1 {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  header h4 {
+    width: 80%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  header #about-me {
+    width: 90%;
+    font-size: 0.6rem;
+    margin: 0 auto;
+  }
+
+  .about-img {
+    margin-top: 4rem;
+  }
+
+  .project-box {
+    min-height: 12rem;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .description h3 {
+    font-size: 1rem;
+    margin: 2rem auto 0.5rem;
+  }
+
+  .description h4 {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+
+  .description .devicons {
+    font-size: 0.6rem;
+    margin: 0.3rem auto;
+  }
+
+  .description .links {
+    font-size: 0.6rem;
+    margin: 0.3rem auto;
+  }
+
+  .view-project-hover {
+    font-size: 0.6em;
+    padding: 0.2rem;
+  }
+
+  .box {
+    width: 50%;
+    margin: auto;
+  }
+
+  .box img {
+    padding: 5px;
+  }
+
+  footer h2 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  footer .social {
+    height: 10rem;
+    padding: 1rem 0;
+  }
+
+  .icons a i {
+    font-size: 1.2rem;
+  }
+  
+  .icons ul li a {
+    padding: 0.2em;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
  
   
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -442,46 +543,3 @@ header #about-me {
   
 }
 
-@media only screen and (max-width: 480px) {
-  .project-box {
-    min-height: 12rem;
-  }
-
-  .description {
-    width: 50%;
-  }
-
-  .description h3 {
-    font-size: 1rem;
-    margin: 2rem auto 0.5rem;
-  }
-
-  .description h4 {
-    font-size: 0.6rem;
-    margin: 0;
-  }
-
-  .description .devicons {
-    font-size: 0.6rem;
-    margin: 0.3rem auto;
-  }
-
-  .description .links {
-    font-size: 0.6rem;
-    margin: 0.3rem auto;
-  }
-
-  .view-project-hover {
-    font-size: 0.6em;
-    padding: 0.2rem;
-  }
-
-  .box {
-    width: 50%;
-    margin: auto;
-  }
-
-  .box img {
-    padding: 5px;
-  }
-}
