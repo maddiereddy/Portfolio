@@ -2,8 +2,10 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Roboto|Lato|Courgette');
+
 body {
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Roboto", sans-serif; 
   font-size: 20px;
   color: silver;
   text-align: center;
@@ -18,7 +20,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(black, #333333);
+  background: linear-gradient(black, dimgray);
   text-transform: uppercase;
   border-bottom: 0.3rem solid tomato;
   z-index: 9999;
@@ -29,18 +31,21 @@ nav {
 
 header {
   padding: 10% 0 5% 0;
-  color: black;
+  color: white;;
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
 }
 
 section {
   min-height: 200px;
   padding: 1% 0;
-  background-color: gray;
+  background-color: dimgray;
   color: black;
-}
-
-section:nth-child(odd) {
-  background-color: lightgray;
 }
 
 /** FOOTER SECTION **/
@@ -48,7 +53,7 @@ footer h2 {
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0;
-  color: white;
+  color: tomato;
 }
 
 footer .social {
@@ -56,7 +61,7 @@ footer .social {
   height: 15rem;
   margin: 0 auto;
   padding: 1rem 0;
-  background: linear-gradient(black, #333333);
+  background: linear-gradient(black, dimgray);
 }
 
 .icons {
@@ -155,9 +160,9 @@ nav a:hover {
 
 /** HEADER SECTION **/
 header {
-  background-color: lightgray;
   text-align: center;
   font-weight: 500;
+  border-bottom: 2px solid tomato;
 }
 
 header #about-me {
@@ -165,6 +170,18 @@ header #about-me {
   width: 50%;
   text-align: center;
   font-size: 1rem;
+}
+
+.profile {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.about-img {
+  margin: 0 auto;
+  object-fit: cover;
+  border: 1px dotted tomato;
+  padding: 5px;
 }
 
 /** RECENT WORK SECTION **/
@@ -175,29 +192,38 @@ header #about-me {
 .content h2 {
   text-align: center;
   margin: 2rem auto 3rem;;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px black;;
+  font-family: "Courgette";
+  font-style: italic;; 
 }
 
 .project-box {
-  background-color: #bbbbbb;
+  display: flex;
+  background: linear-gradient(lightgray, gray);
   width: calc(100% - 2rem);
-  height: 28rem;
+  min-height: 28rem;
   margin: 1rem;
+  border: 15px ridge rgb(80, 80, 80);
 }
 
 .box {
   width: 60%;
-  height: 100%;
-  min-height: 100%;
   color:black;
   font-weight:bold;
-  text-align:center;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
   text-decoration: none;
-  margin: 0;
-  /* border: 3px solid red; */
+  padding: 10px;
+  /* border: 2px solid white; */
+  align-content: center;
+}
+
+.box img {
+  background-color: white;
+  padding: 4px;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 4px 5px black;
 }
 
 .description {
@@ -215,9 +241,11 @@ header #about-me {
 }
 
 .description h3 {
+  font-family: "Courgette"; 
   font-style: italic;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
 .box a {
@@ -302,24 +330,11 @@ header #about-me {
   width: 100%;
 }
 
-  
-/* 
-
-#cribtrakr {
-  background-image: url('./images/cribtrakr.png');
-}
-#opagrappa {
-  background-image: url('./images/opagrappa.png');
-}
-#plughubs {
-  background-image: url('./images/plughubs.png')
-} */
-
 
  /** RESPONSIVE DESIGN **/
  
   
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   nav .nav-menu {
     width: 100%;
     display: block;
@@ -353,8 +368,12 @@ header #about-me {
     margin: 0 auto;
   }
 
+  .about-img {
+    margin-top: 3rem;
+  }
+
   .project-box {
-    height: 16rem;
+    min-height: 16rem;
   }
 
   .content h2 {
@@ -362,33 +381,43 @@ header #about-me {
     font-size: 1.5rem;
   }
 
+  .description {
+    width: 50%;
+    margin: auto;
+  }
+
   .description h3 {
-    font-size: 0.7rem;
-    margin: 1rem auto 0.5rem;
+    font-size: 1rem;
+    margin: 3rem auto 0.5rem;
   }
 
   .description h4 {
-    font-size: 0.35rem;
+    font-size: 0.8rem;
     margin: 0;
   }
 
   .description .devicons {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     margin: 0.3rem auto;
   }
 
   .description .links {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     margin: 0.3rem auto;
   }
 
   .view-project-hover {
-    font-size: 0.5em;
+    font-size: 0.8em;
     padding: 0.2rem;
   }
 
-  .image {
-    margin: 1rem 0.5rem;
+  .box {
+    width: 50%;
+    margin: auto;
+  }
+
+  .box img {
+    padding: 10px;
   }
   
   footer h2 {
@@ -413,20 +442,46 @@ header #about-me {
   
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
   .project-box {
-    height: 12rem;
+    min-height: 12rem;
   }
-}
 
-@media only screen and (min-width: 1025px) {  
-  .project-box {
-    height: 36rem;
+  .description {
+    width: 50%;
   }
-}
 
-@media only screen and (min-width: 1440px) {  
-  .project-box {
-    height: 40rem;
+  .description h3 {
+    font-size: 1rem;
+    margin: 2rem auto 0.5rem;
+  }
+
+  .description h4 {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+
+  .description .devicons {
+    font-size: 0.6rem;
+    margin: 0.3rem auto;
+  }
+
+  .description .links {
+    font-size: 0.6rem;
+    margin: 0.3rem auto;
+  }
+
+  .view-project-hover {
+    font-size: 0.6em;
+    padding: 0.2rem;
+  }
+
+  .box {
+    width: 50%;
+    margin: auto;
+  }
+
+  .box img {
+    padding: 5px;
   }
 }
