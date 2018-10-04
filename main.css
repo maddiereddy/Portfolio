@@ -264,7 +264,7 @@ header #about-me {
   font-weight: 500;
   font-size: 1.5rem;
   margin: 2rem auto;
-
+  padding-bottom: 1rem;
 }
 
 .description a {
@@ -296,7 +296,8 @@ header #about-me {
 
 .description .devicons {
   margin: 2rem auto;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 
 .view-project-hover {
@@ -408,7 +409,7 @@ header #about-me {
   }
 
   .description .devicons {
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin: 0.3rem auto;
   }
 
@@ -521,7 +522,7 @@ header #about-me {
   }
 
   .description .devicons {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0.3rem auto;
   }
 
