@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>Maddie Rajavasireddy</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Eczar|Lora|Tillana|Work+Sans" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Maddie Rajavasireddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Eczar|Lora|Tillana|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      //https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $(".scroll-tag").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
   </head>
   <body>
     <nav role="navigation">
       <div class="content">
         <ul class="nav-menu">
             <li>
-              <a href="#about" title="About">About</a>
+              <a class="scroll-tag" href="#about" title="About">About</a>
             </li>
             <li>
-              <a href="#work" title="Work">Work</a>
+              <a class="scroll-tag" href="#work" title="Work">Work</a>
             </li>
             <li>
-              <a href="#contact" title="Contact">Contact</a>
+              <a class="scroll-tag" href="#contact" title="Contact">Contact</a>
             </li>
         </ul>
         <p class="logo"><a href="https://maddiereddy.github.io/Portfolio" target="_blank">Maddie Rajavasireddy</a></p>
       </div>
     </nav>
-
     <main role="main">
       <header id="about" role="banner">
         <img class="about-img profile" src="./images/profile.png" alt="Profile Picture"/>
@@ -171,6 +198,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
